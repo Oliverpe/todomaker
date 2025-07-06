@@ -10,5 +10,34 @@
     </header>
     <body>
         <!--This body is as empty as my soul or is it?-->
+        <div class ="menucontianer">
+            <button id="addnewtask">create new task</button>
+            <button id="deletetask">Delete taske</button>
+            <button id="showclearedTask">Show cleard tasks</button>
+            <button id="markedCleardTask">Task cleared</button>
+        </div>
+
+        <div class="maintaskSheet">
+            <label for="taskname">Task:</label>
+            <label for="decription">Description:</label>
+            <label for="taskCleard">Task cleared</label>
+        </div>
+
+        <div class="todocontent">
+            <div id="taskname">
+                <p>Taking out trash</p>
+            </div>
+            <div id="decription">
+                <p>take the trash out before it smells</p>
+            </div>
+            <input type="checkbox" id="taskCleard">        
+        </div>
+
+        <form id="new task">
+            <label>
+                task:<input type="text" required><br>
+                
+            </label>
+        </form>
     </body>
 </html>

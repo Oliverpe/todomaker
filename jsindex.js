@@ -14,29 +14,20 @@ navbarContainer.appendChild(h1titel);
 bodyElement.appendChild(navbarContainer);
 
 //menualts
-const menuItems = [
-  { title: 'Add new task', url: '/' },
-  { title: 'Delete task',  url: '/' },
-  {title:'Show cleared tasked', url:'/'}
-];
 
 
-const newTodo = document.createElement('a');
-const clearAllTodo = document.createElement('a');
-const finTask = document.createElement('a');
-const showCompleted = document.createElement('a');
 
-newTodo.textContent="Add new task";
-clearAllTodo.textContent="clear all taskes";
-finTask.textContent="done with checked task";
-showCompleted.textContent= "show completed tasks";
+document.addEventListener('load', () => {
+  
+const creteNewTask = document.querySelector('#addnewtask');
+const deleteBtn = document.querySelector('#deletetask');
+const showClearedTaskBtn = document.querySelector('#showclearedTask');
+const markedCleardBtn = document.querySelector('markedCleardTask');
+  creteNewTask.addEventListener("clicked", (event) => {
+    event.preventDefault();
 
-
-const divmenuElement = document.createElement('div');
-divmenuElement.classList.add('divmenu');
-
-divmenuElement.append(newTodo, clearAllTodo,finTask, showCompleted);
-bodyElement.appendChild(divmenuElement);
+  })
+})
 
 
 

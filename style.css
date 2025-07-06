@@ -1,8 +1,53 @@
 
 .navbarcontainer{
+    display: grid;
     border: 1px solid black;
+    padding: 10px;
+
 }
 
 #mainTitle{
 text-align: center;
 }
+
+/*.divmenu {
+    text-align: center;
+    border: 1px solid black;
+}*/
+
+.menucontianer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: rgb(159, 159, 20);
+    padding: 10px;
+}
+
+.menucontianer> div{
+    border: 1px solid black;
+    font-style:normal;
+    text-align: center;
+}
+
+.maintaskSheet{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border: 1px solid black;
+    padding: 10px;
+
+}
+
+.maintaskSheet > label{
+    text-align: center;
+}
+
+.todocontent{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.todocontent > div checkbox{
+    text-align: center;
+}
+

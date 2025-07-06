@@ -1,53 +1,50 @@
-
-.navbarcontainer{
+.navbar-container {
     display: grid;
     border: 1px solid black;
     padding: 10px;
-
 }
 
-#mainTitle{
-text-align: center;
-}
-
-/*.divmenu {
+#mainTitle {
     text-align: center;
-    border: 1px solid black;
-}*/
+}
 
-.menucontianer{
+:root {
+    --menu-bg-color: rgb(159, 159, 20);
+}
+
+.menucontainer {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    background-color: rgb(159, 159, 20);
+    grid-template-columns: repeat(4, auto);
+    background-color: var(--menu-bg-color);
     padding: 10px;
+    text-align: center;
 }
 
-.menucontianer> div{
+.todoContainer{
+    padding: 16px;
+    background: #fafafa;
+    max-width: 100%;
+    margin: 0 auto; 
+}
+
+.todoContainer table{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 8px;
+}
+
+.todoContainer th, .todoContainer td {
+    padding: 8px;
     border: 1px solid black;
-    font-style:normal;
-    text-align: center;
+    text-align: left;
 }
 
-.maintaskSheet{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    border: 1px solid black;
-    padding: 10px;
-
+.todoContainer thead {
+    background-color: #f0f0f0;
 }
 
-.maintaskSheet > label{
-    text-align: center;
+/* Add this for hiding elements */
+/* Use `.invisible` to hide elements without removing them from the DOM */
+.invisible {
+    display: none;
 }
-
-.todocontent{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    border: 1px solid black;
-    text-align: center;
-}
-
-.todocontent > div checkbox{
-    text-align: center;
-}
-
